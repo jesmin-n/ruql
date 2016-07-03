@@ -2,11 +2,21 @@ GEM
   remote: http://rubygems.org/
   specs:
     builder (3.2.2)
-    byebug (8.2.5)
+    byebug (9.0.5)
+    diff-lcs (1.2.5)
     getopt (1.4.3)
     json (1.8.3)
     rdoc (4.2.2)
       json (~> 1.4)
+    rspec-core (3.5.0)
+      rspec-support (~> 3.5.0)
+    rspec-expectations (3.5.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.5.0)
+    rspec-its (1.2.0)
+      rspec-core (>= 3.0.0)
+      rspec-expectations (>= 3.0.0)
+    rspec-support (3.5.0)
 
 PLATFORMS
   ruby
@@ -16,6 +26,7 @@ DEPENDENCIES
   byebug
   getopt
   rdoc
+  rspec-its
 
 BUNDLED WITH
    1.11.2
