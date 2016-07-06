@@ -17,8 +17,8 @@ describe 'Multiple choice question' do
     describe 'that are correct' do
       it 'with an explanation' do
         @q.answer 'sample', :explanation => 'why'
-        @q.correct_answer.explanation.should == 'why'
-        @q.correct_answer.answer_text.should == 'sample'
+        expect(@q.correct_answer.explanation).to eq('why')
+        expect(@q.correct_answer.answer_text).to eq('sample')
       end
     end
   end
