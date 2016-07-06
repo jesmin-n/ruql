@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'rspec/its'
 
 describe HtmlFormRenderer do
   describe 'when created' do

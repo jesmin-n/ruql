@@ -60,7 +60,8 @@ end
 
 RSpec::Matchers.define :have_xml_element do |expected,options={}|
   require 'rexml/document'
-  require 'active_support/core_ext/string'
+  #deprecated in rails 4.1
+  #require 'active_support/core_ext/string'
   match do |actual|
     @value = options.delete(:value)      
     @match_value = @value || false

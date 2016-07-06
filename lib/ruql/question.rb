@@ -15,8 +15,6 @@ class Question
 
   def text(s) ; @question_text = s ; end
 
-  def uid(u) ; @uid = u ; end
-    
   def explanation(text)
     @answers.each { |answer| answer.explanation ||= text }
   end

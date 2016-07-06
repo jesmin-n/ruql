@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'rspec/its'
 
 describe 'Multiple choice question' do
   context 'when created' do
